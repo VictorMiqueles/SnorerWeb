@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMbT0497A4k+T1xs05yajiwAAAAACAAAAAAAQZgAAAAEAACAAAABnwfqBGNlUnNWOhojR4OnypzLNA3MR01KMkbpm4YML/wAAAAAOgAAAAAIAACAAAABHybPaMzSa2L6VRJjeX1cG57mqQjx3QbLiInmmcL4Yq4AAAAAqGCnVzcqXvWOZwPuW45UWlAR1Gd9jaOE4Kb9a7v2xqhaaeynizLtiMaSaSvf4vkm2+jLthI/0kyi1ox0PYo+kxVrgZXyRdl/EV/ppDfeLQtphTvLkla/xGWdUUjunO1HiBI66OhjgIgSljXM++nyQITikB2KtOrWIkMRVkcnAekAAAADOB7/jmqT6Bxiwa3f0Zu+DWNsSH/xu0kJ6DhSfUlk2yWPhbyACmJAGqtIQ/rmz8lESJCPXF2rMHvN2ePuNYSFT</EncryptedPassword>
+    <History>True|2024-02-01T15:58:07.2078074Z;False|2024-02-01T15:39:30.9437534+00:00;False|2024-02-01T15:36:06.7317925+00:00;False|2024-02-01T15:31:32.1765116+00:00;False|2024-02-01T15:29:05.9483499+00:00;False|2024-02-01T13:15:41.8745810+00:00;False|2024-02-01T13:14:13.8613978+00:00;False|2024-02-01T13:09:23.1181435+00:00;False|2024-02-01T13:00:59.0418376+00:00;False|2024-02-01T12:59:22.6519750+00:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="BulkyBookIdentityContextConnection">
+      <Value>Server=tcp:mibaserver.database.windows.net,1433%3bInitial Catalog=miba_db%3bPersist Security Info=False%3bUser ID=mibaadmin%3bPassword=miba_va_mb24%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=False%3bConnection Timeout=30%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="BulkyBookWeb.Data.ApplicationDbContext">
+      <Value>Server=tcp:mibaserver.database.windows.net,1433%3bInitial Catalog=miba_db%3bPersist Security Info=False%3bUser ID=mibaadmin%3bPassword=miba_va_mb24%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=False%3bConnection Timeout=30%3b</Value>
+    </EFMigrations>
+    <EFMigrations Include="BulkyBookWeb.Data.BulkyBookIdentityContext">
+      <Value>Server=tcp:mibaserver.database.windows.net,1433%3bInitial Catalog=miba_db%3bPersist Security Info=False%3bUser ID=mibaadmin%3bPassword=miba_va_mb24%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=False%3bConnection Timeout=30%3b</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="C:\Users\Victor\Practice\ASP.NET6\BulkyBook\BulkyBookWeb\obj\Release\net8.0\PubTmp\Out\" />
+  <dbfullsql path="C:\Users\Victor\Practice\ASP.NET6\BulkyBook\BulkyBookWeb\obj\Release\net8.0\PubTmp\EFSQLScripts\BulkyBookWeb.Data.ApplicationDbContext.sql" />
+  <dbfullsql path="C:\Users\Victor\Practice\ASP.NET6\BulkyBook\BulkyBookWeb\obj\Release\net8.0\PubTmp\EFSQLScripts\BulkyBookWeb.Data.BulkyBookIdentityContext.sql" />
+</sitemanifest>

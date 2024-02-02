@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="SnorerWeb" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Victor\\Practice\\ASP\.NET6\\BulkyBook\\BulkyBookWeb\\obj\\Release\\net8\.0\\win-x86\\PubTmp\\Out\\$" />
+  </parameter>
+  <parameter name="BulkyBookWeb.Data.ApplicationDbContext" description="" value="Server=tcp:mibaserver.database.windows.net,1433;Initial Catalog=miba_db;Persist Security Info=False;User ID=mibaadmin;Password=miba_va_mb24;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" tags="dbfullsql">
+    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^C:\\Users\\Victor\\Practice\\ASP\.NET6\\BulkyBook\\BulkyBookWeb\\obj\\Release\\net8\.0\\win-x86\\PubTmp\\EFSQLScripts\\BulkyBookWeb\.Data\.ApplicationDbContext\.sql$" />
+  </parameter>
+  <parameter name="BulkyBookWeb.Data.BulkyBookIdentityContext" description="" value="Server=tcp:mibaserver.database.windows.net,1433;Initial Catalog=miba_db;Persist Security Info=False;User ID=mibaadmin;Password=miba_va_mb24;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" tags="dbfullsql">
+    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^C:\\Users\\Victor\\Practice\\ASP\.NET6\\BulkyBook\\BulkyBookWeb\\obj\\Release\\net8\.0\\win-x86\\PubTmp\\EFSQLScripts\\BulkyBookWeb\.Data\.BulkyBookIdentityContext\.sql$" />
+  </parameter>
+</parameters>
