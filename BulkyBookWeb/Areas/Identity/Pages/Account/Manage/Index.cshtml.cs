@@ -25,17 +25,23 @@ namespace BulkyBookWeb.Areas.Identity.Pages.Account.Manage
             _userManager = userManager;
             _signInManager = signInManager;
         }
-
+        
         /// <summary>
         ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
         ///     directly from your code. This API may change or be removed in future releases.
         /// </summary>
         public string Username { get; set; }
-
+        
         /// <summary>
         ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
         ///     directly from your code. This API may change or be removed in future releases.
         /// </summary>
+        /// 
+
+        //public string Firstname { get; set; }
+        //public string Lastname { get; set; }
+
+
         [TempData]
         public string StatusMessage { get; set; }
 
@@ -59,12 +65,15 @@ namespace BulkyBookWeb.Areas.Identity.Pages.Account.Manage
             [Phone]
             [Display(Name = "Phone number")]
             public string PhoneNumber { get; set; }
+            public string Firstname { get; set; }
+            public string Lastname { get; set; }
         }
 
         private async Task LoadAsync(ApplicationUser user)
         {
             var userName = await _userManager.GetUserNameAsync(user);
             var phoneNumber = await _userManager.GetPhoneNumberAsync(user);
+            
 
             Username = userName;
 
@@ -110,6 +119,24 @@ namespace BulkyBookWeb.Areas.Identity.Pages.Account.Manage
                     return RedirectToPage();
                 }
             }
+
+            /////////
+
+            //var userNames = await _userManager.GetUserAsync(User);
+          
+            user.FirstName = Input.Firstname;
+            user.LastName = Input.Lastname;
+
+            var result = await _userManager.UpdateAsync(user);
+            if (!result.Succeeded)
+            {
+                foreach (var error in result.Errors)
+                {
+                    ModelState.AddModelError(string.Empty, error.Description);
+                }
+                return RedirectToPage();
+            }
+
 
             await _signInManager.RefreshSignInAsync(user);
             StatusMessage = "Your profile has been updated";
